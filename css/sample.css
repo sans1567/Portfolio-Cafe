@@ -188,7 +188,7 @@ body {
 }
 /*ハンバーガーメニューは768px以上は非表示*/
 .hamburger-menu {
-    width: 90vw;
+    width: 100%;
     max-width: 1280px;
     height: 0px;
     border: 2px solid rgba(0,0,0,0.5);
@@ -562,7 +562,7 @@ body {
 
 .main-menu__photogallery-text {
     width: 100%;
-    height: 25%;
+    height: 30%;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
     bottom: 0;
@@ -974,7 +974,7 @@ body {
 
 .footer-wrapper {
     width: 90vw;
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 100px auto 0px;
     display: flex;
     flex-direction: row;
@@ -1043,12 +1043,12 @@ body {
     
     .main-menu__photogallery-photos--main {
         width: 100%;
-        height: 40%;
+        height: 50%;
     }
 
     .main-menu__photogallery-photos--sub {
         width: 100%;
-        height: 60%;
+        height: 50%;
     }
     
     .main-menu__photogallery-text p {
@@ -1222,9 +1222,24 @@ body {
     }
     /*interior*/
     .main-interior__description {
-        font-size: 12px;
+        font-size: 10px;
     }
     /*photogallery*/
+    .main-menu__photogallery-text p {
+        font-size: 8px;
+    }
+
+    .main-menu__photogallery-text p:first-child {
+        font-size: 12px;
+    }
+
+    .main-menu__pickup-text p {
+        font-size: 8px;
+    }
+
+    .main-menu__pickup-text p:first-child {
+        font-size: 12px;
+    }
     .main-menu__description-title--food span {
         font-size: 14px;
     }
