@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Asato Satoのポートフォリオサイトです。自然体で心地よいカフェのようなサイトを目指し見る人に安心感や優しさを与えられるようなサイト作りを心がけています">
+    <title>カフェサイト風デザインポートフォリオ | Asato Sato</title>
+    <!--OGP-->
+    <meta property="og:title" contetn="カフェサイト風デザインポートフォリオ | Asato Sato">
+    <meta property="og:description" contetn="Asato Satoのポートフォリオサイトです。自然体で心地よいカフェのようなサイトを目指し見る人に安心感や優しさを与えられるようなサイト作りを心がけています">
+    <meta property="og:url" contetn="https://example.com">
+    <meta property="og:image" contetn="https://example.com/image/op.png">
+    <meta property="og:type" contetn="website">
+    <meta property="og:site_name" contetn="Asato Sato Protfolio">
+    <meta property="og:local" contetn="ja_JP">
+    <!--twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <!--レスポンシブ-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--ファビコン-->
+    <link rel="icon" href="./images/fv.png" type="image/png">
+    <link rel="stylesheet" href="./css/sample.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+<!--ヘッダー-->
+    <header class="header" id="header" role="banner">
+        <div class="header-wrapper">
+            <div class="header-inner">
+                <a class="header-logo" href="#"><img src="./images/hl.png" alt="コーヒーとサイトロゴのイラスト"></a>
+                <nav class="header-nav">
+                    <ul class="header-nav__lists">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#menu">menu</a></li>
+                        <li><a href="#access">access</a></li>
+                    </ul>
+                </nav>
+                <!--ハンバーガーメニューボタン-->
+                <button type="button" class="hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!--ハンバーガーメニュー-->
+                <nav class="hamburger-menu">
+                    <ul class="header-menu__links">
+                        <li><a href="#"><span>home</span><span>-ホーム-</span></a></li>
+                        <li><a href="#about"><span>about</span><span>-サイト紹介-</span></a></li>
+                        <li><a href="#menu"><span>menu</span><span>-メニュー-</span></a></li>
+                        <li><a href="#access"><span>access</span><span>-アクセス-</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--メイン-->
+    <main class="main" id="main" role="main">
+        <div class="main-wrapper">
+            <!--メインヴィジュアル-->
+            <section class="main-visual">
+                <div class="main-visual__inner">
+                    <div class="main-visual__track">
+                        <img class="slide" src="./images/mv1.png" alt="ラテアート">
+                        <img class="slide" src="./images/mv2.png" alt="カフェの外">
+                        <img class="slide" src="./images/mv3.png" alt="チョコミルフィーユ">
+                        <img class="slide" src="./images/mv4.png" alt="カフェのカウンターと女性">
+                    </div>
+                </div>
+                <div class="main-visual__backitem"></div>
+            </section>
+            <div class="main-inner">
+                <div class="main-inner__heading">
+                    <h2 class="main-inner__heading-title">Portfolio Cafe</h2>
+                    <div class="main-inner__heading-text">
+                        <p>コーヒーの香り漂う店内で最高の時間を</p>
+                    </div>
+                    <a class="menu-inner__heading-link--new" href="#main-menu__pickup">新作情報はこちら</a>
+                </div>
+                <!--main-about サイト説明-->
+                <section class="main-about" id="about">
+                    <h2 class="main-about__title section-title">
+                        <span>about</span>
+                    </h2>
+                    <div class="main-about__inner">
+                        <div class="main-about__list">
+                            <h3 class="main-about__list-title">コンセプト</h3>
+                            <div class="main-about__list-text">
+                                <p>日常に溶け込む、自然で落ち着いたカフェ。</p>
+                            </div>
+                        </div>
+                        <div class="main-about__list">
+                            <h3 class="main-about__list-title">ターゲット</h3>
+                            <div class="main-about__list-text">
+                                <p>ドリンクだけではなくフードも楽しみたい20,30代男女を対象。</p><br>
+                                <p>SNS映えだけではなく「落ち着いた空間」「居心地」でお食事を楽しみたい人向けに作成しました。</p>
+                            </div>
+                        </div>
+                        <div class="main-about__list">
+                            <h3 class="main-about__list-title">制作にあたって</h3>
+                            <div class="main-about__list-text">
+                                <p>気になったフードやドリンクがあったらワンクリックで値段や詳細を確認できるクリックアニメーションを実装しました。</p><br>
+                                <p>ワンクリックでメニューを確認できるのでUI/UXにも使いやすさを重視しています。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--main-interior インテリア紹介-->
+                <section class="main-interior" id="interior">
+                    <h2 class="main-interior__title section-title"><span>interior</span></h2>
+                    <div class="main-interior__list">
+                        <div class="main-interior__item">
+                            <img class="main-interior__img" src="./images/map1.png" alt="カフェ店内窓側の席">
+                            <div class="main-interior__text">
+                                <p>少し暗めの照明と柔らかいソファーで</p>
+                                <p>くつろげる空間を演出しました。</p>
+                            </div>
+                        </div>
+                        <div class="main-interior__item">
+                            <img class="main-interior__img" src="./images/map2.png" alt="カフェ店内窓側の席">
+                            <div class="main-interior__text">
+                                <p>窓際の席は日当たりがよく</p>
+                                <p>外の景色を眺めることができます。</p>
+                            </div>
+                        </div>
+                        <div class="main-interior__item">
+                            <img class="main-interior__img" src="./images/map3.png" alt="カフェ店内窓側の席">
+                            <div class="main-interior__text">
+                                <p>4人がけ以上の席もあるので</p>
+                                <p>大人数でのお食事も可能です。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-interior__description">
+                        <p>木の温もりとやわらかな光に囲まれた空間で</p>
+                        <p>ゆったりとした時間をお楽しみいただけます。</p>
+                    </div>
+                </section>
+                <!--main-menu メニュー紹介 フォトギャラリー-->
+                <section class="main-menu" id="menu">
+                    <h2 class="main-menu__title section-title">
+                        <span>menu</span>
+                    </h2>
+                    <div class="main-menu__photogallery">
+                        <div class="main-menu__photogallery-inner">
+                            <div class="main-menu__photogallery-photos--main">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--main" id="#slide_img" src="./images/sp1.png" alt="アボカドトースト">
+                                <div class="main-menu__photogallery-text">
+                                    <p class="menu-title">グリルチキンと季節野菜のプレート</p>
+                                    <p class="menu-price">¥1,200</p>
+                                    <p class="menu-desc">香ばしく焼き上げたグリルチキンと、彩り豊かな季節野菜を一皿にまとめたプレート。</p>
+                                </div>
+                            </div>
+                            <div class="main-menu__photogallery-photos--sub">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--sub" src="./images/sp1.png" alt="アボカドトースト">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--sub" src="./images/sp2.png" alt="パスタ">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--sub" src="./images/sp3.png" alt="ハムサンド">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--sub" src="./images/sp4.png" alt="オムライス">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--sub" src="./images/sp5.png" alt="パンケーキ">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--sub" src="./images/sp6.png" alt="ワッフル">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--sub" src="./images/sp7.png" alt="抹茶ラテ">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--sub" src="./images/sp8.png" alt="紅茶">
+                                <img class="main-menu__photogallery-photo main-menu__photogallery-photo--sub" src="./images/sp9.png" alt="ココア">
+                            </div>
+                        </div>
+                        <div class="main-menu__pickup" id="main-menu__pickup">
+                            <div class="main-menu__pickup-list">
+                                <div class="main-menu__pickup-track">
+                                    <div class="main-menu__pickup-item">
+                                        <img class="main-menu__pickup-photo" src="./images/np1.png" alt="レモネード">
+                                    </div>
+                                    <div class="main-menu__pickup-item">
+                                        <img class="main-menu__pickup-photo" src="./images/np2.png" alt="パスタ">
+                                    </div>
+                                    <div class="main-menu__pickup-item">
+                                        <img class="main-menu__pickup-photo" src="./images/np3.png" alt="ミントジュース">
+                                    </div>
+                                    <div class="main-menu__pickup-item">
+                                        <img class="main-menu__pickup-photo" src="./images/np4.png" alt="いちごとブルーベリーのパンケーキ">
+                                    </div>
+                                </div>
+                                <div class="main-menu__pickup-text">
+                                    <p class="pickup-title">自家製レモネード</p>
+                                    <p class="pickup-price">¥400</p>
+                                    <p class="pickup-desc">国産レモンを使用した爽やかな自家製レモネード</p>
+                                </div>
+                            </div>
+                            <button class="main-menu__button--prev" type="button"></button>
+                            <button class="main-menu__button--next" type="button"></button>
+                        </div>
+                    </div>
+                    <div class="main-menu__description">
+                        <div class="main-menu__description-inner--food">
+                            <div class="main-menu__description-heading--food">
+                                <h3 class="main-menu__description-title--food"><span>food</span></h3>
+                                <p class="main-menu__description-subtitle--food"><span>-フード-</span></p>
+                            </div>
+                            <div class="main-menu__description-text--food">
+                                <p>旬の食材を使い、一皿一皿丁寧に仕上げています。</p><br>
+                                <p>彩り豊かなプレートとともに,</p>
+                                <p>心ほどけるひとときをお楽しみください。</p>
+                            </div>
+                        </div>
+                        <div class="main-menu__description-inner--drink">
+                            <div class="main-menu__description-heading--drink">
+                                <h3 class="main-menu__description-title--drink"><span>drink</span></h3>
+                                <p class="main-menu__description-subtitle--drink"><span>-ドリンク-</span></p>
+                            </div>
+                            <div class="main-menu__description-text--drink">
+                                <p>一杯ずつ丁寧に抽出するコーヒーと季節限定のドリンク。</p>
+                                <p>ほっと一息つける時間をお届けします。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-menu__explanation">
+                        <p>コーヒーの香りに包まれながら</p>
+                        <p>心地よいひとときをお過ごしください。</p><br>
+                        <p>こだわりのフードとドリンクを</p>
+                        <p>一つ一つ丁寧にご用意してお待ちしております。</p><br>
+                        <p>ゆったりした空間で</p>
+                        <p>あなただけのリラックスタイムをどうぞ。</p>
+                    </div>
+                </section>
+                <!--main-access 情報-->
+                <section class="main-access" id="access">
+                    <h2 class="main-access__title--main section-title">
+                        <span>access</span>
+                    </h2>
+                    <div class="main-access__inner">
+                        <div class="main-access__list">
+                            <h3 class="main-access__title--sub"><span>営業時間</span></h3>
+                            <p class="main-access__text">9:00~20:00</p>
+                        </div>
+                        <div class="main-access__list">
+                            <h3 class="main-access__title--sub"><span>住所</span></h3>
+                            <p class="main-access__text">石川県小松市ポートフォリオ町</p>
+                        </div>
+                        <div class="main-access__list">
+                            <h3 class="main-access__title--sub"><span>定休日</span></h3>
+                            <p class="main-access__text">毎週水曜日</p>
+                        </div>
+                        <div class="main-access__list">
+                            <h3 class="main-access__title--sub"><span>席数</span></h3>
+                            <p class="main-access__text">30席(全席禁煙)</p>
+                        </div>
+                        <div class="main-access__map">
+                            <h3 class="main-access__map-title"><span>アクセス</span></h3>
+                            <iframe class="main-access__map--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205806.10189476964!2d136.49230195!3d36.294834949999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff85f3c402ecf6b%3A0x545027619f310613!2z55-z5bed55yM5bCP5p2-5biC!5e0!3m2!1sja!2sjp!4v1772282759398!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a class="main-access__map-link" href="https://maps.app.goo.gl/jijFqXnw483FQ7gK8" target="_blank">Google Mapへ</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!--フッター-->
+    <footer class="footer">
+        <img class="footer-photo" src="./images/fp1.png" alt="暗めのカフェの店内">
+        <div class="footer-wrapper">
+            <div class="footer-inner">
+                <div class="footer-icons">
+                    <a class="footer-icons__icon" href="#"><img class="footer-icons__icon--instagram" src="./images/instagram-icon.svg" alt="インスタグラムアイコン"></a>
+                    <a class="footer-icons__icon" href="#"><img class="footer-icons__icon--facebook" src="./images/facebook-icon.svg" alt="フェイスブックアイコン"></a>
+                    <a class="footer-icons__icon" href="#"><img class="footer-icons__icon--x" src="./images/x-icon.svg" alt="Xアイコン"></a>
+                </div>
+            </div>
+            <div class="footer-access">
+                <h3 class="footer-access__title"><span>contact</span></h3>
+                <p class="footer-access__text">Tel:1234-56-7890<small>(ダミー)</small></p>
+                <p class="footer-access__text">Fax:0987-65-4321<small>(ダミー)</small></p>
+                <p class="footer-access__text">email:portfolio_cafe@domein.com<small>(ダミー)</small></p><br>
+            </div>
+        </div>
+        <p class="footer-copyright">©2026 Asato Sato</p>
+    </footer>
+</body>
+</html>
+
+<!--コメント
+
+◯ ①メインビジュアルのJS追加とレイアウト変更
+②ABOUTのサブタイトル コンセプト ターゲット　デザイン　タイトルを追加し説明を入力
+③インテリア　カフェ店内の画像を追加してそこにインテリア説明を入れる
+④main-menu menu下に説明?を追加
+◯⑤main-menu pickupにprev nextのナビゲーションを追加
+-->
