@@ -608,7 +608,7 @@ body {
 .main-menu__pickup {
     width: 90vw;
     max-width: 1280px;
-    height: 600px;
+    height: 550px;
     margin: 40px auto 0;
     padding: 30px 20px;
     background-color: #222222;
@@ -651,6 +651,7 @@ body {
 .main-menu__pickup-text p {
     width: 100%;
     padding-left: 30px;
+    padding-right: 30px;
     text-align: left;
     font-size: 12px;
     color: #ffffff;
@@ -1224,10 +1225,6 @@ body {
         font-size: 12px;
     }
     /*photogallery*/
-    .main-menu__photogallery-inner {
-        height: 660px;
-    }
-
     .main-menu__description-title--food span {
         font-size: 14px;
     }
