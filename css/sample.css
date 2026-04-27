@@ -1037,7 +1037,7 @@ body {
 @media screen and (max-width: 1000px) {
     .main-menu__photogallery-inner {
         width: 90vw;
-        height: 900px;
+        height: auto;
         flex-direction: column;
     }
     
