@@ -135,7 +135,7 @@ body {
 .hamburger-btn span {
     display: block;
     width: 60%;
-    height: 2px;
+    height: 1px;
     border: none;
     border-radius: 8px;
     background-color: rgba(0,0,0,0.5);
@@ -188,10 +188,10 @@ body {
 }
 /*ハンバーガーメニューは768px以上は非表示*/
 .hamburger-menu {
-    width: 100%;
+    width: 90%;
     max-width: 1280px;
     height: 0px;
-    border: 2px solid rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
     border-radius: 8px;
     background-color: #ffffff;
     overflow: hidden;
@@ -206,7 +206,7 @@ body {
 }
 
 .hamburger-menu.open {
-    height: 330px;
+    height: 400px;
     opacity: 1;
     visibility: visible;
 }
@@ -219,7 +219,7 @@ body {
 
 .header-menu__links li {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -230,6 +230,10 @@ body {
     color: rgba(0,0,0,0.8);
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.header-menu__links li a span {
+    font-size: 18px;
 }
 
 .header-menu__links li a span:nth-of-type(2){
