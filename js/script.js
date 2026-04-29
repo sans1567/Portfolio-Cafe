@@ -27,12 +27,6 @@ let num = 0;
 
 function mainVisualSlide() {
     mainVisualTrack.style.transform = `translateX(-${num * 100}%)`;
-
-    mainVisualSlides.forEach((mainVisualSlide) => {
-        mainVisualSlide.classList.remove('is-active');
-    })
-
-    mainVisualSlides[num].classList.add('is-active');
 }
 
 setInterval(function(){
@@ -43,7 +37,7 @@ setInterval(function(){
     }
 
     mainVisualSlide();
-},10000);
+},6000);
 
 const mainVisualInner = document.querySelector('.main-visual__inner');
 const prev = document.querySelector('.main-menu__button--prev');
