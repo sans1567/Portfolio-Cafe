@@ -135,7 +135,7 @@ body {
 .hamburger-btn span {
     display: block;
     width: 60%;
-    height: 2px;
+    height: 1px;
     border: none;
     border-radius: 8px;
     background-color: rgba(0,0,0,0.5);
@@ -188,10 +188,10 @@ body {
 }
 /*ハンバーガーメニューは768px以上は非表示*/
 .hamburger-menu {
-    width: 90vw;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1280px;
     height: 0px;
-    border: 2px solid rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
     border-radius: 8px;
     background-color: #ffffff;
     overflow: hidden;
@@ -206,7 +206,7 @@ body {
 }
 
 .hamburger-menu.open {
-    height: 330px;
+    height: 400px;
     opacity: 1;
     visibility: visible;
 }
@@ -219,7 +219,7 @@ body {
 
 .header-menu__links li {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -230,6 +230,10 @@ body {
     color: rgba(0,0,0,0.8);
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.header-menu__links li a span {
+    font-size: 18px;
 }
 
 .header-menu__links li a span:nth-of-type(2){
@@ -263,7 +267,7 @@ body {
 /*スライドショー*/
 .main-visual__inner {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1280px;
     height: 600px;
     border: none;
     border-radius: 16px;
@@ -312,7 +316,7 @@ body {
 
 .main-visual__backitem {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1280px;
     height: 600px;
     margin-top: 10px;
     margin-left: 10px;
@@ -328,7 +332,7 @@ body {
 
 .main-visual__heading {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1280px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -359,6 +363,7 @@ body {
     min-width: 250px;
     color: #ffffff;
     padding: 10px 40px;
+    margin: 40px auto 0px;
     border: 2px solid #ffffff;
     border-radius: 24px;
     background: rgba(0,0,0,0.2);
@@ -400,11 +405,12 @@ body {
 
 .main-about__inner {
     width: 90vw;
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 40px auto 0px;
     display: grid;
     flex-direction: row;
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
     gap: 20px;
 }
 
@@ -444,7 +450,7 @@ body {
 
 .main-interior__list {
     width: 90vw;
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 40px auto 0px;
     border: 2px solid rgba(0,0,0,0.5);
     border-radius: 8px;
@@ -489,7 +495,7 @@ body {
 
 .main-interior__description {
     width: 90vw;
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 160px auto 0px;
     text-align: center;
     font-weight: bold;
@@ -547,13 +553,13 @@ body {
 
 .main-menu__photogallery-inner {
     width: 90vw;
-    max-width: 1000px;
-    height: 400px;
+    max-width: 1280px;
+    height: 600px;
     margin: 40px auto 0;
     padding: 30px 20px;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     background-color: #222222;
     position: relative;
 }
@@ -561,14 +567,13 @@ body {
 .main-menu__photogallery-inner::before{
     content: "menu";
     position: absolute;
-    top: 0;
-    left: 30px;
-    bottom: 5px;
+    top: 3px;
+    left: 20px;
     color: #ffffff;
 }
 
 .main-menu__photogallery-photos--main {
-    width: 50%;
+    width: 60%;
     height: 100%;
     position: relative;
 }
@@ -577,36 +582,39 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .main-menu__photogallery-text {
     width: 100%;
-    height: 25%;
+    height: 30%;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
     bottom: 0;
     left: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-menu__photogallery-text p {
     width: 100%;
-    margin-top: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
     text-align: left;
     font-size: 12px;
     color: #ffffff;
 }
 
+.main-menu__photogallery-text p:first-child {
+    font-size: 16px;
+}
+
 .main-menu__photogallery-photos--sub {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .main-menu__photogallery-photo--sub {
@@ -623,8 +631,8 @@ body {
 
 .main-menu__pickup {
     width: 90vw;
-    max-width: 1000px;
-    height: 520px;
+    max-width: 1280px;
+    height: 550px;
     margin: 40px auto 0;
     padding: 30px 20px;
     background-color: #222222;
@@ -634,9 +642,8 @@ body {
 .main-menu__pickup::before {
     content: "new";
     position: absolute;
-    top: 0;
-    left: 30px;
-    bottom: 5px;
+    top: 3px;
+    left: 20px;
     color: #ffffff;
 }
 
@@ -656,21 +663,29 @@ body {
 
 .main-menu__pickup-text {
     width: 100%;
-    height: 20%;
+    height: 22%;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
+    display: grid;
+    justify-items: center;
 }
 
 .main-menu__pickup-text p {
     width: 100%;
-    margin-top: 5px;
-    padding-left: 25px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: left;
     font-size: 12px;
     color: #ffffff;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-menu__pickup-text p:first-child {
+    font-size: 16px;
 }
 
 .main-menu__pickup-item {
@@ -689,7 +704,7 @@ body {
 .main-menu__button--prev {
     width: 44px;
     height: 44px;
-    background-color: #ffffff;
+    background-color: transparent;
     border: none;
     border-radius: 50%;
     position: absolute;
@@ -720,7 +735,7 @@ body {
 .main-menu__button--next {
     width: 44px;
     height: 44px;
-    background-color: #ffffff;
+    background-color: transparent;
     border: none;
     border-radius: 50%;
     position: absolute;
@@ -750,7 +765,7 @@ body {
 
 .main-menu__description-inner--food{
     width: 90vw;
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 40px auto 0;
     padding: 20px 0px;
     position: relative;
@@ -767,6 +782,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.main-menu__description-title--food span {
+    font-size: 18px;
 }
 
 .main-menu__description-subtitle--food span {
@@ -790,13 +809,13 @@ body {
 }
 
 .main-menu__description-text--food p {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
 }
 
 .main-menu__description-inner--drink {
     width: 90vw;
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 20px auto 0;
     padding: 20px 0px;
     position: relative;
@@ -812,6 +831,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.main-menu__description-title--drink span {
+    font-size: 18px;
 }
 
 .main-menu__description-subtitle--drink span {
@@ -835,7 +858,7 @@ body {
 }
 
 .main-menu__description-text--drink p {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -975,7 +998,7 @@ body {
 
 .footer-wrapper {
     width: 90vw;
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 100px auto 0px;
     display: flex;
     flex-direction: row;
@@ -1033,6 +1056,40 @@ body {
 .footer-copyright {
     margin-top: 100px;
     text-align: center;
+}
+/*max-width:1000px main-photogallery__inner レイアウト変更*/
+@media screen and (max-width: 1000px) {
+    .main-menu__photogallery-inner {
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .main-menu__photogallery-photos--main {
+        width: 100%;
+        height: 50%;
+    }
+
+    .main-menu__photogallery-photos--sub {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .main-menu__photogallery-text p {
+        font-size: 10px;
+    }
+
+    .main-menu__photogallery-text p:first-child {
+        font-size: 14px;
+    }
+
+    .main-menu__pickup-text p {
+        font-size: 10px;
+    }
+
+    .main-menu__pickup-text p:first-child {
+        font-size: 14px;
+    }
 }
 /*768px以上はハンバーガーメニュー非表示*/
 @media screen and (min-width: 768px) {
@@ -1108,55 +1165,35 @@ body {
         font-size: 14px;
     }
     /*main-menu*/
-    .main-menu__photogallery-inner {
-        width: 90vw;
-        height: 790px;
-        margin: 40px auto 0;
-        flex-direction: column;
-    }
-
-    .main-menu__photogallery-photos--main {
-        width: 100%;
-        height: 50%;
-    }
-
-    .main-menu__photogallery-photo--main {
-        width: 100%;
-        height: 100%;
-    }
-
-    .main-menu__photogallery-photos--sub {
-        width: 100%;
-        height: 50%;
-    }
-
-    .main-menu__photogallery-photo--sub {
-        width: 100%;
-    }
-
     .main-menu__photogallery-text p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
-    .main-menu__pickup-text p {
-        font-size: 10px;
+    .main-menu__photogallery-text p:first-child {
+        font-size: 12px;
+    }
+
+    .main-menu__description-title--food span {
+        font-size: 16px;
     }
 
     .main-menu__description-subtitle--food span {
-        font-size: 12px;
-    }
-
-    .main-menu__description-text--food p {
-        padding: 0px 10px;
         font-size: 10px;
     }
 
+    .main-menu__description-text--food p {
+        font-size: 10px;
+    }
+
+    .main-menu__description-title--drink span {
+        font-size: 16px;
+    }
+
     .main-menu__description-subtitle--drink span {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .main-menu__description-text--drink p {
-        padding: 0px 10px;
         font-size: 10px;
     }
 
@@ -1213,19 +1250,38 @@ body {
     }
     /*interior*/
     .main-interior__description {
-        font-size: 12px;
+        font-size: 10px;
     }
     /*photogallery*/
-    .main-menu__photogallery-inner {
-        height: 660px;
+    .main-menu__photogallery-text p {
+        font-size: 8px;
+    }
+
+    .main-menu__photogallery-text p:first-child {
+        font-size: 12px;
+    }
+
+    .main-menu__pickup-text p {
+        font-size: 8px;
+    }
+
+    .main-menu__pickup-text p:first-child {
+        font-size: 12px;
+    }
+    .main-menu__description-title--food span {
+        font-size: 14px;
     }
 
     .main-menu__description-subtitle--food span {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .main-menu__photogallery-text--food p {
-        font-size: 10px;
+        font-size: 8px;
+    }
+
+    .main-menu__description-title--drink span {
+        font-size: 14px;
     }
 
     .main-menu__description-subtitle--drink span {
