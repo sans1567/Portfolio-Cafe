@@ -261,7 +261,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: -5;
-    background-image: url(../images/bi.png);
+    background: #D3D3D3;
 }
 
 /*スライドショー*/
@@ -294,19 +294,35 @@ body {
 
 .slide {
     width: 100%;
+    min-width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.slide.is-active {
+    animation: slideScale 10s ease forwards;
+    transform-origin: center center;
+}
+
+@keyframes slideScale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.12);
+    }
 }
 
 .main-visual__backitem {
     width: 100%;
     max-width: 1280px;
     height: 600px;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
     border: none;
     border-radius: 16px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.3);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -354,6 +370,10 @@ body {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .menu-visual__heading-link--new:hover {
@@ -1092,6 +1112,10 @@ body {
 
     .hamburger-btn {
         display: block;
+    }
+    /*main-visual*/
+    .menu-visual__link--new {
+        bottom: 30%;
     }
     /*main-about*/
     .main-about__inner {
