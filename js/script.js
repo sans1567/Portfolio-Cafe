@@ -39,15 +39,43 @@ setInterval(function(){
     mainVisualSlide();
 },6000);
 
-const mainVisualInner = document.querySelector('.main-visual__inner');
-const prev = document.querySelector('.main-menu__button--prev');
-const next = document.querySelector('.main-menu__button--next');
+const mainInteriorSlides = document.querySelectorAll('.main-interior__item');
+const mainInteriorTrack = document.querySelector('.main-interior__track');
+const mainInteriorPrevButton = document.querySelector('.main-interior__button--prev');
+const mainInteriorNextButton = document.querySelector('.main-interior__button--next');
+let index = 0;
+
+function mainInteriorSlideAnimation() {
+    mainInteriorTrack.style.transform = `translateX(-${index * 100}%)`;
+}
+
+mainInteriorNextButton.addEventListener('click', () => {
+    if(index < mainInteriorSlides.length - 1) {
+        index++;
+    } else {
+        index = 0;
+    }
+
+    mainInteriorSlideAnimation();
+})
+
+mainInteriorPrevButton.addEventListener('click', () => {
+    if(index > 0) {
+        index--;
+    } else {
+        index = mainInteriorSlides.length - 1;
+    }
+
+    mainInteriorSlideAnimation();
+})
 
 const pickupTrack = document.querySelector('.main-menu__pickup-track');
 const pickupSlides = document.querySelectorAll('.main-menu__pickup-item');
 const pickupTitle = document.querySelector('.pickup-title');
 const pickupPrice = document.querySelector('.pickup-price');
 const pickupDesc = document.querySelector('.pickup-desc');
+const prev = document.querySelector('.main-menu__button--prev');
+const next = document.querySelector('.main-menu__button--next');
 let current = 0;
 
 const pickupText = [
@@ -191,26 +219,9 @@ photos.forEach( (photo,index) => {
 /* ====================
     スクロール
 ====================== */
-const mainInteriorTexts = document.querySelectorAll('.main-interior__text');
 const mainInteriorDescription = document.querySelector('.main-interior__description');
 const mainMenuPickupText = document.querySelector('.main-menu__pickup-text');
 const mainMenuExplanation = document.querySelector('.main-menu__explanation');
-
-function mainInteriorTextsShow(entries) {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-        } else {
-            entry.target.classList.remove('is-visible');
-        }
-    })
-}
-
-const InteriorTextObserber = new IntersectionObserver(mainInteriorTextsShow);
-
-mainInteriorTexts.forEach((mainInteriorText) => {
-    InteriorTextObserber.observe(mainInteriorText);
-})
 
 function mainInteriorDescriptionShow(entries) {
     if(entries[0].isIntersecting) {
