@@ -398,11 +398,25 @@ body {
 }
 
 .main-about__list-title {
+    padding-left: 10px;
     font-size: 18px;
+    position: relative;
+}
+
+.main-about__list-title::before{
+    content: "";
+    width: 2px;
+    height: 18px;
+    background-color: #F4A460;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .main-about__list-text {
     margin-top: 20px;
+    padding-left: 10px;
     font-size: 12px;
 }
 /*main-interior*/
