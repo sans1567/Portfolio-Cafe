@@ -385,9 +385,11 @@ body {
     max-width: 1280px;
     margin: 40px auto 0px;
     display: grid;
-    flex-direction: row;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "about concept"
+    "design commitment";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -395,6 +397,22 @@ body {
     padding: 20px;
     border: 2px solid rgba(0,0,0,0.5);
     border-radius: 8px;
+}
+
+.main-about__list:first-child {
+    grid-area: about;
+}
+
+.main-about__list:nth-child(2) {
+    grid-area: concept;
+}
+
+.main-about__list:nth-child(3) {
+    grid-area: design;
+}
+
+.main-about__list:last-child {
+    grid-area: commitment;
 }
 
 .main-about__list-title {
@@ -1176,9 +1194,13 @@ body {
     }
     /*main-about*/
     .main-about__inner {
-        flex-direction: column;
-        justify-content: stretch;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "about"
+        "concept"
+        "design"
+        "commitment";
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
     .main-about__list-title {
         font-size: 16px;
