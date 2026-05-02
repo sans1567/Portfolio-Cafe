@@ -559,35 +559,17 @@ body {
     margin: 160px auto 0px;
     text-align: center;
     font-weight: bold;
-    /*常時非表示*/
+}
+
+.main-interior__description p span{
+    display: inline-block;
+    font-size: 24px;
     opacity: 0;
     transform: translateY(30px);
-    transition: 1s ease;
+    transition: .3s ease;
 }
 
-.main-interior__description::before {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: -80px;
-    left: -25px;
-    background-image: url(../images/mf1.png);
-}
-
-.main-interior__description::after {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    bottom: -80px;
-    right: -25px;
-    background-image: url(../images/mf2.png);
-} 
-
-.main-interior__description.is-visible {
+.main-interior__description p span.is-visible {
     opacity: 1;
     transform: translateY(0px);
 }

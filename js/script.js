@@ -69,6 +69,16 @@ mainInteriorPrevButton.addEventListener('click', () => {
     mainInteriorSlideAnimation();
 })
 
+setInterval(() => {
+    index++;
+
+    if(index >= mainInteriorSlides.length) {
+        index = 0;
+    }
+
+    mainInteriorSlideAnimation()
+}, 6000);
+
 const pickupTrack = document.querySelector('.main-menu__pickup-track');
 const pickupSlides = document.querySelectorAll('.main-menu__pickup-item');
 const pickupTitle = document.querySelector('.pickup-title');
@@ -137,7 +147,7 @@ setInterval(function(){
 
     pickupSlideAnimation()
 
-},5000);
+},6000);
 
 /* ====================
     クリック
@@ -219,21 +229,7 @@ photos.forEach( (photo,index) => {
 /* ====================
     スクロール
 ====================== */
-const mainInteriorDescription = document.querySelector('.main-interior__description');
-const mainMenuPickupText = document.querySelector('.main-menu__pickup-text');
 const mainMenuExplanation = document.querySelector('.main-menu__explanation');
-
-function mainInteriorDescriptionShow(entries) {
-    if(entries[0].isIntersecting) {
-        mainInteriorDescription.classList.add('is-visible');
-    } else {
-        mainInteriorDescription.classList.remove('is-visible');
-    }
-}
-
-const descriptionObserver = new IntersectionObserver(mainInteriorDescriptionShow);
-
-descriptionObserver.observe(mainInteriorDescription);
 
 function mainMenuExplanationShow(entries) {
     if(entries[0].isIntersecting) {
@@ -246,3 +242,22 @@ function mainMenuExplanationShow(entries) {
 const explanationObserver = new IntersectionObserver(mainMenuExplanationShow);
 
 explanationObserver.observe(mainMenuExplanation);
+/* ============================
+    文字が浮き出てくるアニメーション
+===============================*/
+const mainInteriorDescription = document.querySelector('.main-interior__description p');
+
+const descText = mainInteriorDescription.textContent; /*pタグ内のテキスト*/
+const descTextSplits = descText.split('');/*テキストを分割*/
+
+const descTextMap = descTextSplits.map((descTextSplit) => `<span>${descTextSplit}</span>`).join("");/*<spanタグの新たな配列を作成>*/
+
+mainInteriorDescription.innerHTML = descTextMap;
+
+const spans = mainInteriorDescription.querySelectorAll('span');
+
+spans.forEach((span,index) => {
+    setTimeout(() => {
+        span.classList.add('is-visible');
+    },index * 400);
+});
