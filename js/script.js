@@ -268,8 +268,8 @@ function descObserver(entries) {
         timer = setInterval(() => {
             spans[count].classList.add('is-visible');
             count++;
-            
-            if(count >= spans.length) {
+
+            if(count > spans.length - 1) {
                 clearInterval(timer);
             }
         }, 80);
