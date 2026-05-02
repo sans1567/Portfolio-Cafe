@@ -129,6 +129,7 @@ body {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
+    z-index: 9999;
     cursor: pointer;
 }
 
@@ -440,8 +441,8 @@ body {
 /*main-interior*/
 .main-interior {
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 180px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-image: url(../images/bi.png);
 }
 
@@ -516,7 +517,7 @@ body {
     border-radius: 50%;
     background-color: rgba(255,255,255,0.3);
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 35px;
     transform: translateY(-50%);
     z-index: 2;
@@ -548,7 +549,7 @@ body {
     border-radius: 50%;
     background-color: rgba(255,255,255,0.3);
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 35px;
     transform: translateY(-50%);
     z-index: 2;
@@ -575,9 +576,36 @@ body {
 .main-interior__description {
     width: 90vw;
     max-width: 1280px;
-    margin: 160px auto 0px;
+    margin: 80px auto 0px;
     text-align: center;
     font-weight: bold;
+}
+
+.main-interior__description p {
+    width: 100%;
+    position: relative;
+}
+
+.main-interior__description p::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid rgba(0,0,0,0.5);
+    border-left: 2px solid rgba(0,0,0,0.5);
+}
+
+.main-interior__description p::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    border-right: 2px solid rgba(0,0,0,0.5);
 }
 
 .main-interior__description p span{
@@ -1195,6 +1223,10 @@ body {
         margin-top: 40px;
     }
 
+    .main-interior__description p span {
+        font-size: 20px;
+    }
+
     .main-interior__description {
         font-size: 14px;
     }
@@ -1285,6 +1317,10 @@ body {
     /*interior*/
     .main-interior__description {
         font-size: 10px;
+    }
+
+    .main-interior__description p span {
+        font-size: 16px;
     }
     /*photogallery*/
     .main-menu__photogallery-text p {

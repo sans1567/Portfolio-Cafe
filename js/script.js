@@ -246,6 +246,7 @@ explanationObserver.observe(mainMenuExplanation);
     文字が浮き出てくるアニメーション
 ===============================*/
 const mainInteriorDescription = document.querySelector('.main-interior__description p');
+let count = 0;
 
 const descText = mainInteriorDescription.textContent; /*pタグ内のテキスト*/
 const descTextSplits = descText.split('');/*テキストを分割*/
@@ -256,8 +257,25 @@ mainInteriorDescription.innerHTML = descTextMap;
 
 const spans = mainInteriorDescription.querySelectorAll('span');
 
-spans.forEach((span,index) => {
-    setTimeout(() => {
-        span.classList.add('is-visible');
-    },index * 400);
-});
+let timer;
+
+function descObserver(entries) {
+    if(entries[0].isIntersecting) {
+        spans.forEach((span) => {span.classList.remove('is-visible')});
+
+        let count = 0;
+
+        timer = setInterval(() => {
+            spans[count].classList.add('is-visible');
+            count++;
+
+            if(count > spans.length - 1) {
+                clearInterval(timer);
+            }
+        }, 80);
+    }
+}
+
+const descObserv = new IntersectionObserver(descObserver);
+
+descObserv.observe(mainInteriorDescription);
