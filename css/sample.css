@@ -990,7 +990,7 @@ body {
     height: 100px;
     position: absolute;
     top: -45px;
-    left: -25px;
+    left: 0px;
     background-image: url(../images/mf1.png);
 }
 
@@ -1001,7 +1001,7 @@ body {
     height: 100px;
     position: absolute;
     bottom: -45px;
-    right: -25px;
+    right: 0px;
     background-image: url(../images/mf2.png);
 }
 
