@@ -611,7 +611,7 @@ body {
 
 .main-interior__description p span {
     display: inline-block;
-    font-size: 24px;
+    font-size: 16px;
     opacity: 0;
     transform: translateY(30px);
     transition: .3s ease;
@@ -624,22 +624,21 @@ body {
 
 .main-interior__logo {
     width: 100%;
-    height: 200px;
-    margin-top: 80px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
 .main-interior__logo--mag {
     display: inline-block;
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
 }
 
 .main-interior__logo--pot {
     display: inline-block;
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
 }
 
 /*main-menu フォトギャラリーセクション*/
@@ -1246,7 +1245,7 @@ body {
     }
 
     .main-interior__description p span {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .main-interior__description {
@@ -1342,7 +1341,7 @@ body {
     }
 
     .main-interior__description p span {
-        font-size: 16px;
+        font-size: 12px;
     }
     /*photogallery*/
     .main-menu__photogallery-text p {
