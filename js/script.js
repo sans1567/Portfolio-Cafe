@@ -10,8 +10,6 @@ btn.addEventListener('click', () => {
 
    const isOpen = btn.getAttribute('aria-expanded') === 'true';
 
-   console.log(isOpen);
-
    btn.setAttribute('aria-expanded',!isOpen);
    menu.setAttribute('aria-hidden', isOpen);
 })
@@ -282,13 +280,14 @@ function descObserver(entries) {
 
         let count = 0;
 
-        timer = setInterval(() => {
+        let timer = setInterval(() => {
+            if(count >= spans.length) {
+                clearInterval(timer);
+                return;
+            }
+
             spans[count].classList.add('is-visible');
             count++;
-
-            if(count > spans.length - 1) {
-                clearInterval(timer);
-            }
         }, 80);
     }
 }
