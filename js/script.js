@@ -23,10 +23,17 @@ document.addEventListener('click', (e) => {
 ====================== */
 const mainVisualTrack = document.querySelector('.main-visual__track');
 const mainVisualSlides = document.querySelectorAll('.slide');
+const mainVisualText = document.querySelector('.main-visual__heading-text p')
+
 let num = 0;
+
+const textList = [
+    {text: "新作情報は下のリンクから"}
+]
 
 function mainVisualSlide() {
     mainVisualTrack.style.transform = `translateX(-${num * 100}%)`;
+    mainVisualText.textContent = textList[num].text;
 }
 
 setInterval(function(){
