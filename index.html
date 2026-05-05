@@ -8,8 +8,8 @@
     <!--OGP-->
     <meta property="og:title" contetn="カフェサイト風デザインポートフォリオ | Asato Sato">
     <meta property="og:description" contetn="Asato Satoのポートフォリオサイトです。自然体で心地よいカフェのようなサイトを目指し見る人に安心感や優しさを与えられるようなサイト作りを心がけています">
-    <meta property="og:url" contetn="https://example.com">
-    <meta property="og:image" contetn="https://example.com/image/op.png">
+    <meta property="og:url" contetn="https://sans1567.github.io/Portfolio-Cafe/">
+    <meta property="og:image" contetn="https://sans1567.github.io/Portfolio-Cafe/image/op.png">
     <meta property="og:type" contetn="website">
     <meta property="og:site_name" contetn="Asato Sato Protfolio">
     <meta property="og:local" contetn="ja_JP">
@@ -18,7 +18,7 @@
     <!--レスポンシブ-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--ファビコン-->
-    <link rel="icon" href="./images/fv.png" type="image/png">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/sample.css">
     <script src="./js/script.js" defer></script>
 </head>
@@ -37,13 +37,23 @@
                     </ul>
                 </nav>
                 <!--ハンバーガーメニューボタン-->
-                <button type="button" class="hamburger-btn">
+                <button 
+                    type="button" 
+                    class="hamburger-btn"
+                    aria-controls="hamburger-menu"
+                    aria-expanded="false"
+                    aria-label="メニューを開く"
+                >
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
                 <!--ハンバーガーメニュー-->
-                <nav class="hamburger-menu">
+                <nav 
+                    class="hamburger-menu"
+                    id="hamburager-menu"
+                    aria-hidden="true"
+                >
                     <ul class="header-menu__links">
                         <li><a href="#"><span>home</span><span>-ホーム-</span></a></li>
                         <li><a href="#about"><span>about</span><span>-サイト紹介-</span></a></li>
@@ -304,10 +314,11 @@
             ◯main-menu__explanationのフレーム調整 テキスト調整
             ⑤◯ブランチ追加 fix/main-inner
             ◯操作した時の画面のズレ修正
-            ⑥main-visualのスライドショーの修正 スライドしたらテキストを新作情報,お知らせなどのテキストに変更する
-            ⑦area属性の設定
-            ⑧OGBタグ,SEOチェック
-            ⑨最終チェック→完成
+            ⑥◯main-visualのスライドショーの修正 スライドしたらテキストを新作情報,お知らせなどのテキストに変更する
+            ⑦◯area属性の設定
+            ⑧
+            ⑨◯OGBタグ,SEOチェック
+            ⑩最終チェック→完成
 
             ・git 命名方法
             feature/〇〇追加

@@ -7,6 +7,13 @@ const menu = document.querySelector('.hamburger-menu');
 btn.addEventListener('click', () => {
     btn.classList.toggle('active');
     menu.classList.toggle('open');
+
+   const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+   console.log(isOpen);
+
+   btn.setAttribute('aria-expanded',!isOpen);
+   menu.setAttribute('aria-hidden', isOpen);
 })
 
 document.addEventListener('click', (e) => {
