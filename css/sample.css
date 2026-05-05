@@ -34,7 +34,7 @@ body {
 
 /*ヘッダー*/
 .header-wrapper {
-    width: 90vw;
+    width: 90%;
     height: 50px;
     position: fixed;
     top: 0;
@@ -366,7 +366,7 @@ body {
 }
 
 .main-about {
-    padding-top: 100px;
+    padding-top: 80px;
     background-color: #ffffff;
 }
 
@@ -383,7 +383,7 @@ body {
 }
 
 .main-about__inner {
-    width: 90vw;
+    width: 90%;
     max-width: 1280px;
     margin: 40px auto 0px;
     display: grid;
@@ -460,7 +460,7 @@ body {
 }
 
 .main-interior__list {
-    width: 90vw;
+    width: 90%;
     height: 500px;
     max-width: 1280px;
     margin: 40px auto 0px;
@@ -575,7 +575,7 @@ body {
 }
 
 .main-interior__description {
-    width: 90vw;
+    width: 90%;
     max-width: 1280px;
     margin: 80px auto 0px;
     text-align: center;
@@ -591,9 +591,9 @@ body {
     content: "";
     position: absolute;
     top: -20px;
-    left: -20px;
-    width: 40px;
-    height: 40px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
     border-top: 2px solid rgba(0,0,0,0.5);
     border-left: 2px solid rgba(0,0,0,0.5);
 }
@@ -602,16 +602,16 @@ body {
     content: "";
     position: absolute;
     bottom: -20px;
-    right: -20px;
-    width: 40px;
-    height: 40px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
     border-bottom: 2px solid rgba(0,0,0,0.5);
     border-right: 2px solid rgba(0,0,0,0.5);
 }
 
-.main-interior__description p span{
+.main-interior__description p span {
     display: inline-block;
-    font-size: 24px;
+    font-size: 16px;
     opacity: 0;
     transform: translateY(30px);
     transition: .3s ease;
@@ -622,10 +622,29 @@ body {
     transform: translateY(0px);
 }
 
+.main-interior__logo {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-interior__logo--mag {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+}
+
+.main-interior__logo--pot {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+}
+
 /*main-menu フォトギャラリーセクション*/
 .main-menu {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: #F5F5F5;
 }
 
@@ -642,7 +661,7 @@ body {
 }
 
 .main-menu__photogallery-inner {
-    width: 90vw;
+    width: 90%;
     max-width: 1280px;
     height: 600px;
     margin: 40px auto 0;
@@ -720,7 +739,7 @@ body {
 }
 
 .main-menu__pickup {
-    width: 90vw;
+    width: 90%;
     max-width: 1280px;
     height: 550px;
     margin: 40px auto 0;
@@ -854,7 +873,7 @@ body {
 }
 
 .main-menu__description-inner--food{
-    width: 90vw;
+    width: 90%;
     max-width: 1280px;
     margin: 40px auto 0;
     padding: 20px 0px;
@@ -904,7 +923,7 @@ body {
 }
 
 .main-menu__description-inner--drink {
-    width: 90vw;
+    width: 90%;
     max-width: 1280px;
     margin: 20px auto 0;
     padding: 20px 0px;
@@ -953,35 +972,36 @@ body {
 }
 
 .main-menu__explanation {
-    width: 90vw;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1280px;
     margin: 80px auto 0px;
     text-align: center;
     /*常時非表示*/
     opacity: 0;
     transform: translateY(30px);
     transition: 1s ease;
+    position: relative;
 }
 
 .main-menu__explanation::before{
     content: "";
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -20px;
-    left: -25px;
+    top: -45px;
+    left: 0px;
     background-image: url(../images/mf1.png);
 }
 
 .main-menu__explanation::after {
     content: "";
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    bottom: -20px;
-    right: -25px;
+    bottom: -45px;
+    right: 0px;
     background-image: url(../images/mf2.png);
 }
 
@@ -991,8 +1011,8 @@ body {
 }
 /*access*/
 .main-access {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-image: url(../images/ab.png);
 }
 
@@ -1009,8 +1029,8 @@ body {
 }
 
 .main-access__inner {
-    width: 90vw;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1280px;
     margin: 40px auto 0px;
     text-align: center;
 }
@@ -1087,7 +1107,7 @@ body {
 }
 
 .footer-wrapper {
-    width: 90vw;
+    width: 90%;
     max-width: 1280px;
     margin: 100px auto 0px;
     display: flex;
@@ -1150,7 +1170,7 @@ body {
 /*max-width:1000px main-photogallery__inner レイアウト変更*/
 @media screen and (max-width: 1000px) {
     .main-menu__photogallery-inner {
-        width: 90vw;
+        width: 90%;
         height: auto;
         flex-direction: column;
     }
@@ -1192,9 +1212,6 @@ body {
     html {
         font-size: 14px;
     }
-    .header-wrapper {
-        width: 100vw;
-    }
     /*768px以下はグローバルナビゲーション非表示*/
     .header-nav {
         display: none;
@@ -1225,7 +1242,7 @@ body {
     }
 
     .main-interior__description p span {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .main-interior__description {
@@ -1321,7 +1338,7 @@ body {
     }
 
     .main-interior__description p span {
-        font-size: 16px;
+        font-size: 12px;
     }
     /*photogallery*/
     .main-menu__photogallery-text p {

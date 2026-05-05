@@ -8,8 +8,8 @@
     <!--OGP-->
     <meta property="og:title" contetn="カフェサイト風デザインポートフォリオ | Asato Sato">
     <meta property="og:description" contetn="Asato Satoのポートフォリオサイトです。自然体で心地よいカフェのようなサイトを目指し見る人に安心感や優しさを与えられるようなサイト作りを心がけています">
-    <meta property="og:url" contetn="https://example.com">
-    <meta property="og:image" contetn="https://example.com/image/op.png">
+    <meta property="og:url" contetn="https://sans1567.github.io/Portfolio-Cafe/">
+    <meta property="og:image" contetn="https://sans1567.github.io/Portfolio-Cafe/image/op.png">
     <meta property="og:type" contetn="website">
     <meta property="og:site_name" contetn="Asato Sato Protfolio">
     <meta property="og:local" contetn="ja_JP">
@@ -18,7 +18,7 @@
     <!--レスポンシブ-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--ファビコン-->
-    <link rel="icon" href="./images/fv.png" type="image/png">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/sample.css">
     <script src="./js/script.js" defer></script>
 </head>
@@ -37,13 +37,23 @@
                     </ul>
                 </nav>
                 <!--ハンバーガーメニューボタン-->
-                <button type="button" class="hamburger-btn">
+                <button 
+                    type="button" 
+                    class="hamburger-btn"
+                    aria-controls="hamburger-menu"
+                    aria-expanded="false"
+                    aria-label="メニューを開く"
+                >
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
                 <!--ハンバーガーメニュー-->
-                <nav class="hamburger-menu">
+                <nav 
+                    class="hamburger-menu"
+                    id="hamburager-menu"
+                    aria-hidden="true"
+                >
                     <ul class="header-menu__links">
                         <li><a href="#"><span>home</span><span>-ホーム-</span></a></li>
                         <li><a href="#about"><span>about</span><span>-サイト紹介-</span></a></li>
@@ -56,7 +66,7 @@
     </header>
 
     <!--メイン-->
-    <main class="main" id="main" role="main">
+    <main class="main" id="main">
         <div class="main-wrapper">
             <!--メインヴィジュアル-->
             <section class="main-visual">
@@ -145,7 +155,11 @@
                         <button class="main-interior__button--next"></button>
                     </div>
                     <div class="main-interior__description">
-                        <p>木の温もりとやわらかな光に囲まれた空間で<br>ゆったりとした時間をお楽しみいただけます。</p>
+                        <p>木の温もりとやわらかな光に囲まれた空間でゆったりとした時間をお楽しみいただけます。</p>
+                    </div>
+                    <div class="main-interior__logo">
+                        <img class="main-interior__logo--mag" src="./images/mid1.png" alt="ハートとマグカップの画像">
+                        <img class="main-interior__logo--pot" src="./images/mid2.png" alt="ハートのマークのポット">
                     </div>
                 </section>
                 <!--main-menu メニュー紹介 フォトギャラリー-->
@@ -219,14 +233,12 @@
                                 <p class="main-menu__description-subtitle--drink"><span>-ドリンク-</span></p>
                             </div>
                             <div class="main-menu__description-text--drink">
-                                <p>一杯ずつ丁寧に抽出するコーヒーと季節限定のドリンク。</p>
+                                <p>一杯ずつ丁寧に抽出するコーヒーと季節限定のドリンクで,</p>
                                 <p>ほっと一息つける時間をお届けします。</p>
                             </div>
                         </div>
                     </div>
                     <div class="main-menu__explanation">
-                        <p>コーヒーの香りに包まれながら</p>
-                        <p>心地よいひとときをお過ごしください。</p><br>
                         <p>こだわりのフードとドリンクを</p>
                         <p>一つ一つ丁寧にご用意してお待ちしております。</p><br>
                         <p>ゆったりした空間で</p>
@@ -258,7 +270,7 @@
                         <div class="main-access__map">
                             <h3 class="main-access__map-title"><span>アクセス</span></h3>
                             <iframe class="main-access__map--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205806.10189476964!2d136.49230195!3d36.294834949999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff85f3c402ecf6b%3A0x545027619f310613!2z55-z5bed55yM5bCP5p2-5biC!5e0!3m2!1sja!2sjp!4v1772282759398!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <a class="main-access__map-link" href="https://maps.app.goo.gl/jijFqXnw483FQ7gK8" target="_blank">Google Mapへ</a>
+                            <a class="main-access__map-link" href="https://maps.app.goo.gl/jijFqXnw483FQ7gK8" target="_blank" rel="noopener noreferrer">Google Mapへ</a>
                         </div>
                     </div>
                 </section>
@@ -271,9 +283,9 @@
         <div class="footer-wrapper">
             <div class="footer-inner">
                 <div class="footer-icons">
-                    <a class="footer-icons__icon" href="#"><img class="footer-icons__icon--instagram" src="./images/instagram-icon.svg" alt="インスタグラムアイコン"></a>
-                    <a class="footer-icons__icon" href="#"><img class="footer-icons__icon--facebook" src="./images/facebook-icon.svg" alt="フェイスブックアイコン"></a>
-                    <a class="footer-icons__icon" href="#"><img class="footer-icons__icon--x" src="./images/x-icon.svg" alt="Xアイコン"></a>
+                    <div class="footer-icons__icon"><img class="footer-icons__icon--instagram" src="./images/instagram-icon.svg" alt="インスタグラムアイコン"></div>
+                    <div class="footer-icons__icon"><img class="footer-icons__icon--facebook" src="./images/facebook-icon.svg" alt="フェイスブックアイコン"></div>
+                    <div class="footer-icons__icon"><img class="footer-icons__icon--x" src="./images/x-icon.svg" alt="Xアイコン"></div>
                 </div>
             </div>
             <div class="footer-access">
