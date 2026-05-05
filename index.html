@@ -66,7 +66,7 @@
     </header>
 
     <!--メイン-->
-    <main class="main" id="main" role="main">
+    <main class="main" id="main">
         <div class="main-wrapper">
             <!--メインヴィジュアル-->
             <section class="main-visual">
@@ -270,7 +270,7 @@
                         <div class="main-access__map">
                             <h3 class="main-access__map-title"><span>アクセス</span></h3>
                             <iframe class="main-access__map--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205806.10189476964!2d136.49230195!3d36.294834949999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff85f3c402ecf6b%3A0x545027619f310613!2z55-z5bed55yM5bCP5p2-5biC!5e0!3m2!1sja!2sjp!4v1772282759398!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <a class="main-access__map-link" href="https://maps.app.goo.gl/jijFqXnw483FQ7gK8" target="_blank">Google Mapへ</a>
+                            <a class="main-access__map-link" href="https://maps.app.goo.gl/jijFqXnw483FQ7gK8" target="_blank" rel="noopener noreferrer">Google Mapへ</a>
                         </div>
                     </div>
                 </section>
@@ -283,9 +283,9 @@
         <div class="footer-wrapper">
             <div class="footer-inner">
                 <div class="footer-icons">
-                    <a class="footer-icons__icon" href="#"><img class="footer-icons__icon--instagram" src="./images/instagram-icon.svg" alt="インスタグラムアイコン"></a>
-                    <a class="footer-icons__icon" href="#"><img class="footer-icons__icon--facebook" src="./images/facebook-icon.svg" alt="フェイスブックアイコン"></a>
-                    <a class="footer-icons__icon" href="#"><img class="footer-icons__icon--x" src="./images/x-icon.svg" alt="Xアイコン"></a>
+                    <div class="footer-icons__icon"><img class="footer-icons__icon--instagram" src="./images/instagram-icon.svg" alt="インスタグラムアイコン"></div>
+                    <div class="footer-icons__icon"><img class="footer-icons__icon--facebook" src="./images/facebook-icon.svg" alt="フェイスブックアイコン"></div>
+                    <div class="footer-icons__icon"><img class="footer-icons__icon--x" src="./images/x-icon.svg" alt="Xアイコン"></div>
                 </div>
             </div>
             <div class="footer-access">
@@ -297,34 +297,5 @@
         </div>
         <p class="footer-copyright">©2026 Asato Sato</p>
     </footer>
-    <!--メモ
-        ----------------------------------------------------------------------------------------------------------
-            ・修正追加箇所
-            ①◯sp main-visualのデザイン調整
-            ②◯main-aboutのデザイン変更 ブランチ追加 style/main-about
-            ◯main-about__list-textのテキスト変更
-            ③◯main-interiorのデザイン変更　ブランチ追加 style/main-interior
-            ◯main-interior__descriptionのフレーム調整
-            ④◯ブランチ追加 fix/main-menu
-            ③◯main-interiorのデザイン変更　ブランチ追加 style/main-interior
-            ◯スライドショーにsetIntervalで自動で動くようにする
-            ◯main-interior__descriptionのフレームを無くして文字を少し大きくして文字が一文字ずつ浮き上がってくるアニメーションを設定
-            ◯全体のレイアウトを修正,できたらアイコンなどもつける
-            ④◯ブランチ追加 fix/main-menu
-            ◯main-menu__explanationのフレーム調整 テキスト調整
-            ⑤◯ブランチ追加 fix/main-inner
-            ◯操作した時の画面のズレ修正
-            ⑥◯main-visualのスライドショーの修正 スライドしたらテキストを新作情報,お知らせなどのテキストに変更する
-            ⑦◯area属性の設定
-            ⑧
-            ⑨◯OGBタグ,SEOチェック
-            ⑩最終チェック→完成
-
-            ・git 命名方法
-            feature/〇〇追加
-            fix/〇〇修正
-            style/〇〇調整
-        ------------------------------------------------------------------------------------------------------------
-    -->
 </body>
 </html>
