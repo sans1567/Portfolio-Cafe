@@ -7,6 +7,11 @@ const menu = document.querySelector('.hamburger-menu');
 btn.addEventListener('click', () => {
     btn.classList.toggle('active');
     menu.classList.toggle('open');
+
+   const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+   btn.setAttribute('aria-expanded',!isOpen);
+   menu.setAttribute('aria-hidden', isOpen);
 })
 
 document.addEventListener('click', (e) => {
@@ -265,13 +270,14 @@ function descObserver(entries) {
 
         let count = 0;
 
-        timer = setInterval(() => {
+        let timer = setInterval(() => {
+            if(count >= spans.length) {
+                clearInterval(timer);
+                return;
+            }
+
             spans[count].classList.add('is-visible');
             count++;
-
-            if(count > spans.length - 1) {
-                clearInterval(timer);
-            }
         }, 80);
     }
 }

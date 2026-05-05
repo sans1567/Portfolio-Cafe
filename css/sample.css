@@ -1116,7 +1116,7 @@ body {
     height: 100%;
 }
 
-.footer-icons a img:hover {
+.footer-icons div img:hover {
     opacity: 0.7;
 }
 
